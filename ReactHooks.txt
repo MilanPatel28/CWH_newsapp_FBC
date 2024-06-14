@@ -1,0 +1,11 @@
+What are React Hooks?
+
+- Features of class based components in function based components
+- It allows you to use state and other React features without writing a class
+- Hooks are functions that let you “hook into” React state and lifecycle features from function components
+
+Commonly used React Hooks
+- useState - state can be updated and set an initial value
+- useEffect - perform side effects in function components (the changes we perform in componentDidMount, componentDidUpdate and componentWillUnmount will be done in useEffect)
+- useContext - allows you to use React’s context features. When you have data that needs to be shared across many components, it is better to use context API. It is used to pass data through the component tree (component ke andar component ke andar component...) without having to pass props down manually at every level.
+- useRef - returns a mutable ref object whose .current property hold a DOM element and is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.

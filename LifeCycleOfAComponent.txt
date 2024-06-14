@@ -1,0 +1,31 @@
+Component LifeCycle:
+The series of event that happen from the time the component is instantiated to the time it is destroyed is called the component lifecycle. The component lifecycle is managed by Angular.
+OR
+The series of event that happen from the mounting of a component to the unmounting of the component is called the component lifecycle. The component lifecycle is managed by React.
+Mounting - Birth of a component
+Updating - Growth of a component
+Unmounting - Death of a component
+
+METHODS IN REACT COMPONENT LIFECYCLE:
+1. Mounting
+    a. constructor()
+    b. static getDerivedStateFromProps()
+    c. render() - is used to render the JSX, means the HTML of the component in react. This method is required for a class based component to render the DOM. It runs during the mounting and updating of your component. render() method shoulbe be pure ie you cannot modify state inside it!
+    d. componentDidMount() - is used to make API calls, to set timers, to update the state of the component. It runs only once in the lifecycle of a component. It runs after the component output has been rendered to the DOM, means after the render() method.
+2. Updating
+    a. static getDerivedStateFromProps()
+    b. shouldComponentUpdate()
+    c. render()
+    d. getSnapshotBeforeUpdate()
+    e. componentDidUpdate() - is used to make API calls, to set timers, to update the state of the component. This method is invoked as soon as the updating happens. The most common use case for the componentDidUpdate() method is updating the DOM in response to prop or state changes.
+3. Unmounting
+    a. componentWillUnmount() - is used to cancel any outgoing network requests, or remove all event listeners associated with the component, or clean up any DOM elements that were created in componentDidMount() method.
+    OR
+    This method is invoked immediately before a component is unmounted and destroyed. Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in componentDidMount() method.
+4. Error Handling
+    a. static getDerivedStateFromError()
+    b. componentDidCatch()
+(The other methods which don't have description were not explained in the video.)
+
+Link to the react diagram lifecycles:
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
